@@ -1,0 +1,15 @@
+Read /home/user/ai-full-stack-it-access-requests/CHALLENGE.md, /home/user/ai-full-stack-it-access-requests/docs/requirements.md, /home/user/ai-full-stack-it-access-requests/materials/office-policy.md and /home/user/ai-full-stack-it-access-requests/snapshot.schema.json
+   Write planning/spec.md: a table with columns ID, Requirement, Source, Check. One row per
+   requirement, IDs R-01 onward. Requirement is one sentence that a test or an inspection can
+   check. Source names the file and section and quotes the exact words. Check says how we will
+   know it is met: the test, the file to inspect, or the command. Do not add anything the files
+   do not say. Do not write any code.
+
+---
+
+Read /home/user/ai-full-stack-it-access-requests/CHALLENGE.md, /home/user/ai-full-stack-it-access-requests/docs/requirements.md, /home/user/ai-full-stack-it-access-requests/materials/office-policy.md and /home/user/ai-full-stack-it-access-requests/snapshot.schema.json
+   Write planning/spec.md: a table with columns ID, Requirement, Source, Check. One row per
+   requirement, IDs R-01 onward. Requirement is one sentence that a test or an inspection can
+   check. Source names the file and section and quotes the exact words. Check says how we will
+   know it is met: the test, the file to inspect, or the command. Do not add anything the files
+   do not say. Do not write any code.
