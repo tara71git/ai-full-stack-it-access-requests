@@ -1,0 +1,59 @@
+The spec lines marked not met: plan each, build it test first, and mark it again.
+
+---
+
+The spec lines marked not met: plan each, build it test first, and mark it again.
+
+---
+
+The review queue: run intake on the 20 exports and check each entry's status, owner and next
+
+---
+
+The review queue: run intake on the 20 exports and check each entry's status, owner and next
+
+---
+
+The review queue: run intake on the 20 exports and check each entry's status, owner and next
+   action against the five rules of `materials/office-policy.md`, in order.
+
+---
+
+The review queue: run intake on the 20 exports and check each entry's status, owner and next
+   action against the five rules of `materials/office-policy.md`, in order.
+
+---
+
+The accuracy check: compare the extracted fields with the expected facts you wrote from the
+   messages, as `CHALLENGE.md` asks for `deliverables/accuracy.md`.
+
+---
+
+The accuracy check: compare the extracted fields with the expected facts you wrote from the
+   messages, as `CHALLENGE.md` asks for `deliverables/accuracy.md`.
+
+---
+
+The rest of the files `CHALLENGE.md` § What to submit lists under `deliverables/`, and the README
+   it asks for. Class time covers the spec, the plan, the build and its validation; these files
+
+---
+
+The rest of the files `CHALLENGE.md` § What to submit lists under `deliverables/`, and the README
+   it asks for. Class time covers the spec, the plan, the build and its validation; these files
+
+---
+
+check for any missing steps
+
+---
+
+check for any missing steps
+
+---
+
+explain the steps you made in detailed format
+
+---
+
+explain the steps you made in detailed format
