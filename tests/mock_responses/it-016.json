@@ -1,0 +1,17 @@
+{
+  "id": "resp_mock_it_016",
+  "status": "completed",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"request_id\": \"IT-061\", \"kind\": \"new\", \"requester\": \"Alex Turner\", \"team\": \"Platform\", \"system\": \"Forge\", \"environment\": \"staging\", \"permission\": \"read\", \"business_purpose\": \"investigate variable starter project build times using example pipeline runs\", \"start_date\": \"2026-10-26\", \"end_date\": \"2026-10-28\", \"manager\": \"Nia Patel\", \"request_date\": \"2026-10-22\", \"supporting_quotes\": [\"submitting request IT-061\"], \"issues\": []}"
+        }
+      ]
+    }
+  ]
+}

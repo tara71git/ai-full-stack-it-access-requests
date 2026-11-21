@@ -1,0 +1,17 @@
+{
+  "id": "resp_mock_it_019",
+  "status": "completed",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"request_id\": \"IT-019\", \"kind\": \"change\", \"requester\": \"Sara Ahmed\", \"team\": \"Customer Operations\", \"system\": \"Beacon\", \"environment\": \"production\", \"permission\": \"read\", \"business_purpose\": \"review the daily exception report and explain unusual entries during handover\", \"start_date\": \"2026-10-28\", \"end_date\": \"2026-11-04\", \"manager\": \"Elena Park\", \"request_date\": \"2026-10-22\", \"supporting_quotes\": [\"from write to read\", \"reviewing the daily exception report\"], \"issues\": []}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "resp_mock_it_011",
+  "status": "completed",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"request_id\": \"IT-011\", \"kind\": \"new\", \"requester\": \"Zoe Adams\", \"team\": \"Research\", \"system\": \"Atlas\", \"environment\": \"staging\", \"permission\": \"read\", \"business_purpose\": \"review sample experiment records before the team walkthrough\", \"start_date\": null, \"end_date\": null, \"manager\": \"Priya Shah\", \"request_date\": \"2026-10-22\", \"supporting_quotes\": [\"for next Monday - Friday\"], \"issues\": [\"start_date: relative date next Monday\", \"end_date: relative date Friday\"]}"
+        }
+      ]
+    }
+  ]
+}

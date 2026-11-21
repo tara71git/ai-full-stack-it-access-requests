@@ -1,0 +1,17 @@
+{
+  "id": "resp_mock_it_012",
+  "status": "completed",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"request_id\": \"IT-012\", \"kind\": \"new\", \"requester\": \"Ravi Shah\", \"team\": \"Infrastructure\", \"system\": \"Forge\", \"environment\": \"staging\", \"permission\": \"admin\", \"business_purpose\": \"rehearse a configuration migration before planning the wider rollout\", \"start_date\": \"2026-10-26\", \"end_date\": \"2026-10-27\", \"manager\": \"Nia Patel\", \"request_date\": \"2026-10-22\", \"supporting_quotes\": [\"configuration migration rehearsal before planning the wider rollout\"], \"issues\": []}"
+        }
+      ]
+    }
+  ]
+}

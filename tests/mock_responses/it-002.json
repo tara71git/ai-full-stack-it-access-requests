@@ -1,0 +1,17 @@
+{
+  "id": "resp_mock_it_002",
+  "status": "completed",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"request_id\": \"IT-002\", \"kind\": \"new\", \"requester\": \"Owen Reed\", \"team\": \"Payments\", \"system\": \"Ledger\", \"environment\": \"production\", \"permission\": \"write\", \"business_purpose\": \"correct settlement entries and check the totals against the settlement report\", \"start_date\": \"2026-10-24\", \"end_date\": \"2026-10-25\", \"manager\": \"Elena Park\", \"request_date\": \"2026-10-22\", \"supporting_quotes\": [\"make the corrections\", \"check the totals against the settlement report\"], \"issues\": []}"
+        }
+      ]
+    }
+  ]
+}

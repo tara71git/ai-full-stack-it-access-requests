@@ -11,6 +11,21 @@ from typing import Callable, Mapping, Protocol, Sequence
 class ProviderError(Exception):
     """The provider could not return a response."""
 
+    def __init__(self, message, *, code="unavailable"):
+        super().__init__(message)
+        self.code = code
+
+
+PROVIDER_ERRORS = {
+    "unavailable": "provider temporarily unavailable",
+    "rate_limit": "provider rate limit reached",
+    "timeout": "provider request timed out",
+    "credentials": "provider rejected credentials; check API_KEY",
+    "configuration": "provider rejected the configured request",
+    "malformed": "malformed provider response",
+    "fixture": "mock reply missing or invalid; check the fixture directory",
+}
+
 
 @dataclass(frozen=True)
 class ProviderReply:
@@ -33,10 +48,12 @@ class MockProvider:
         fixture_dir: Path,
         scripts: Mapping[str, Sequence[str]],
         before_reply: Callable[[str], None] | None = None,
+        use_document_fixtures: bool = False,
     ) -> None:
         self._fixture_dir = fixture_dir
         self._scripts = {document_id: deque(fixtures) for document_id, fixtures in scripts.items()}
         self._before_reply = before_reply
+        self._use_document_fixtures = use_document_fixtures
         self._calls: list[str] = []
         self._lock = Lock()
 
@@ -49,9 +66,12 @@ class MockProvider:
         with self._lock:
             self._calls.append(document_id)
             script = self._scripts.get(document_id)
-            if not script:
-                raise ProviderError(f"No remaining mock reply for {document_id}")
-            fixture = script.popleft()
+            if script:
+                fixture = script.popleft()
+            elif script is None and self._use_document_fixtures:
+                fixture = Path(document_id).name.lower()
+            else:
+                raise ProviderError(f"No remaining mock reply for {document_id}", code="fixture")
 
         # Wait outside the lock so a blocked reply leaves other documents free to run.
         if self._before_reply is not None:
@@ -59,10 +79,13 @@ class MockProvider:
 
         try:
             envelope = json.loads((self._fixture_dir / fixture).read_text(encoding="utf-8"))
-        except (OSError, ValueError) as error:
-            raise ProviderError(f"Unable to read mock reply {fixture} for {document_id}") from error
+        except (OSError, ValueError, RecursionError) as error:
+            raise ProviderError(f"Unable to read mock reply {fixture} for {document_id}",
+                                code="fixture") from error
         if not isinstance(envelope, dict):
-            raise ProviderError(f"Mock reply {fixture} must contain a JSON object")
+            raise ProviderError(f"Mock reply {fixture} must contain a JSON object", code="fixture")
         if "transport_error" in envelope:
-            raise ProviderError(str(envelope["transport_error"]))
+            code = envelope.get("error_code", "unavailable")
+            raise ProviderError(str(envelope["transport_error"]),
+                                code=code if isinstance(code, str) else "unavailable")
         return ProviderReply(envelope=envelope, response_source="mock")
