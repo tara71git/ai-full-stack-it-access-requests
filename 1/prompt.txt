@@ -1,0 +1,9 @@
+record that each test failed before its code existed. If a step's new test already passes
+   before any code is written, say so in its commit message (`Test first: <step> (already
+   passes)`) rather than making it fail on purpose.
+
+---
+
+record that each test failed before its code existed. If a step's new test already passes
+   before any code is written, say so in its commit message (`Test first: <step> (already
+   passes)`) rather than making it fail on purpose.
