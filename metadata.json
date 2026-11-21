@@ -3,8 +3,10 @@
   "checkpoint_id": "01M7XQ893F82AM1KWNT3DPRPMC",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 4,
+  "checkpoints_count": 6,
   "files_touched": [
+    "intake/__init__.py",
+    "intake/provider.py",
     "tests/mock_responses/it-001.json",
     "tests/mock_responses/it-002-transport-error.json",
     "tests/test_mock_provider.py"
@@ -23,14 +25,21 @@
       "compact_transcript": "/1/transcript.jsonl",
       "content_hash": "/1/content_hash.txt",
       "prompt": "/1/prompt.txt"
+    },
+    {
+      "metadata": "/2/metadata.json",
+      "transcript": "/2/full.jsonl",
+      "compact_transcript": "/2/transcript.jsonl",
+      "content_hash": "/2/content_hash.txt",
+      "prompt": "/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 35853,
+    "input_tokens": 87964,
     "cache_creation_tokens": 0,
-    "cache_read_tokens": 289024,
-    "output_tokens": 2450,
-    "api_call_count": 12
+    "cache_read_tokens": 513920,
+    "output_tokens": 4827,
+    "api_call_count": 21
   },
   "redaction": {
     "replacements": 0,
