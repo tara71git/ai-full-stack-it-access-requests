@@ -1,0 +1,18 @@
+{
+  "id": "resp_mock_it_001",
+  "status": "completed",
+  "output": [
+    {
+      "type": "message",
+      "role": "assistant",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"request_id\":\"IT-001\",\"request_date\":\"2026-10-22\",\"kind\":\"new\",\"requester\":\"Maya Chen\",\"team\":\"Analytics\",\"system\":\"Atlas\",\"environment\":\"staging\",\"permission\":\"read\",\"business_purpose\":\"check the weekly conversion dashboard with the new event definition changes\",\"start_date\":\"2026-10-23\",\"end_date\":\"2026-11-06\",\"manager\":\"Priya Shah\",\"supporting_quotes\":[\"new read access on Atlas in staging from 2026-10-23 to 2026-11-06\"],\"issues\":[]}",
+          "annotations": []
+        }
+      ]
+    }
+  ]
+}
