@@ -1,0 +1,15 @@
+Create `planning/validation.md` with one row per line of `planning/spec.md in this format 
+   | Spec line | Requirement | Met or not met | Evidence | Note |
+
+---
+
+Create `planning/validation.md` with one row per line of `planning/spec.md in this format 
+   | Spec line | Requirement | Met or not met | Evidence | Note |
+
+---
+
+Under the table, write the count: how many lines are met, how many are not met.
+
+---
+
+Under the table, write the count: how many lines are met, how many are not met.
